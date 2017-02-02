@@ -3,9 +3,9 @@ vm: true
 
 env_variables:
   # --REQUIRED--
-  DATABASE_URI: mongodb://localhost:27017/dev
-  APP_ID: <your-app-id>
-  MASTER_KEY: <your-master-key>
+  DATABASE_URI: mongodb://heroku_bmcnt0hd:72d8lb9v3trsfsap0m27krn3q3@ds139869.mlab.com:39869/heroku_bmcnt0hd
+  APP_ID: lazy-parse
+  MASTER_KEY: gleam50flag
   # --OPTIONAL--
   # FILE_KEY: <your-file-key>
   # PARSE_MOUNT: /parse
