@@ -26,13 +26,20 @@ var api = new ParseServer({
       senderId: '787525490129', // The Sender ID of GCM
       apiKey: 'AIzaSyCd0nTCBYEUYYXflqAtxTp2u0uefuvS7O4' // The Server API Key of GCM
     },
-    ios: {
+    ios: [{
       pfx: 'certs/lazy_prod_push.p12', // the path and filename to the .p12 file you exported earlier. 
       cert: '', // If not using the .p12 format, the path to the certificate PEM to load from disk
-      bundleId: '', // The bundle identifier associated with your app
+      bundleId: 'com.lazy.customer', // The bundle identifier associated with your app
       key: '', // If not using the .p12 format, the path to the private key PEM to load from disk
       production: true // Specifies which environment to connect to: Production (if true) or Sandbox
-    }
+    },
+    {
+      pfx: 'certs/lazy_prod_push.p12', // the path and filename to the .p12 file you exported earlier. 
+      cert: '', // If not using the .p12 format, the path to the certificate PEM to load from disk
+      bundleId: 'com.lazy.cleaner', // The bundle identifier associated with your app
+      key: '', // If not using the .p12 format, the path to the private key PEM to load from disk
+      production: true // Specifies which environment to connect to: Production (if true) or Sandbox
+    }]
   }
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
